@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Report Lost Item</title>
-<link rel="stylesheet" href="style.css">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2>Report Lost Item</h2>
+    <h2>🔍 Report Lost Item</h2>
 
-<form id="lostForm">
-  <input name="title" placeholder="Title"><br>
-  <input name="description" placeholder="Description"><br>
-  <input name="category" placeholder="Category"><br>
-  <input name="location_lost" placeholder="Location"><br>
-  <input name="date_lost" type="date"><br>
+    <form id="lostForm">
 
-  <button type="submit">Submit</button>
-</form>
+        <input
+            type="text"
+            name="title"
+            placeholder="Item Title"
+            required
+        >
 
-<script src="script.js"></script>
+        <input
+            type="text"
+            name="description"
+            placeholder="Item Description"
+            required
+        >
+
+        <input
+            type="text"
+            name="category"
+            placeholder="Category (Bottle, Wallet, ID Card...)"
+            required
+        >
+
+        <input
+            type="text"
+            name="location_lost"
+            placeholder="Location Lost"
+            required
+        >
+
+        <input
+            type="date"
+            name="date_lost"
+            required
+        >
+
+        <button type="submit">
+            Report Lost Item
+        </button>
+
+    </form>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

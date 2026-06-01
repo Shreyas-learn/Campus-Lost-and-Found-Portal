@@ -199,7 +199,14 @@ if(document.getElementById("claimsContainer")){
         <p><b>Item ID:</b> ${claim.item_id}</p>
         <p><b>Claimed By:</b> ${claim.claimed_by}</p>
         <p><b>Message:</b> ${claim.message}</p>
-        <p><b>Status:</b> ${claim.status}</p>
+        <p>
+        <b>Status:</b>
+        ${
+        claim.item.returned
+        ? '<span class="returned">Returned</span>'
+        : '<span class="available">Available</span>'
+        }
+        </p>
 
         <button onclick="approveClaim('${claim._id}')">Approve</button>
         <button onclick="rejectClaim('${claim._id}')">Reject</button>

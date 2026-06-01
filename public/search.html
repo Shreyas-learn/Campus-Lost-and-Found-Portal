@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>View Items</title>
+<title>Found Items</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2>Found Items</h2>
-<button onclick="filterItems('all')">All</button>
-<button onclick="filterItems('available')">Available</button>
-<button onclick="filterItems('returned')">Returned</button>
+<h2>📋 Found Items</h2>
+
+<div class="filters">
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('available')">Available</button>
+    <button onclick="filterItems('returned')">Returned</button>
+</div>
 
 <div id="itemsContainer"></div>
 

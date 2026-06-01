@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Report Found Item</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2>Report Found Item</h2>
+<h2>📦 Report Found Item</h2>
 
 <form id="foundForm">
-<input name="title" placeholder="Title"><br>
-<input name="description" placeholder="Description"><br>
-<input name="category" placeholder="Category"><br>
-<input name="location_found" placeholder="Location"><br>
-<input name="date_found" type="date"><br>
-<input name="image" type="file"><br>
 
-<button type="submit">Submit</button>
+<input name="title" placeholder="Item Title" required>
+
+<input name="description" placeholder="Description" required>
+
+<input name="category" placeholder="Category" required>
+
+<input name="location_found" placeholder="Location Found" required>
+
+<input type="date" name="date_found">
+
+<input type="file" name="image">
+
+<button type="submit">Submit Item</button>
+
 </form>
 
 <script src="script.js"></script>

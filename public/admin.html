@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script>
+
+const password = prompt("Enter Admin Password:")
+
+if(password !== "admin123"){
+  alert("Wrong password!")
+  window.location.href = "/"
+}
+
+</script>
+<h2>Admin Panel - Claims</h2>
+
+
+<div id="claimsContainer"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
